@@ -1,0 +1,28 @@
+{
+  "name": "jensostertag/php-curl",
+  "description": "A PHP Curl Wrapper Library",
+  "keywords": [
+    "curl",
+    "wrapper"
+  ],
+  "type": "library",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jens Ostertag",
+      "email": "development@jens-ostertag.de",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "jensostertag\\Curl\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.0.0",
+    "ext-json": "*",
+    "ext-curl": "*"
+  }
+}
