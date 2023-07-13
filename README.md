@@ -6,7 +6,7 @@ To install this library, include it in your project using composer:
 ```json
 {
     "require": {
-        "jensostertag/php-geocoding": "dev-main"
+        "jensostertag/curl-adapter": "1.0.0"
     }
 }
 ```

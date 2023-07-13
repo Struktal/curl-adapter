@@ -1,6 +1,6 @@
 {
-  "name": "jensostertag/php-curl",
-  "description": "A PHP Curl Wrapper Library",
+  "name": "jensostertag/curl-adapter",
+  "description": "A Curl Wrapper Library for PHP",
   "keywords": [
     "curl",
     "wrapper"
