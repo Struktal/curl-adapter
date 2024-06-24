@@ -6,7 +6,7 @@ To install this library, include it in your project using composer:
 ```json
 {
     "require": {
-        "jensostertag/curl-adapter": "1.0.0"
+        "jensostertag/curl-adapter": "~1.1.0"
     }
 }
 ```
@@ -20,8 +20,8 @@ The following example shows how to send a GET request to a HTML page:
 $curl = new Curl();
 $curl->setUrl("URL");
 $curl->setMethod(Curl::$METHOD_GET);
-$curl->addHeader([
-    "accept" => "text/html, application/xhtml+xml"
+$curl->setHeaders([
+    "Accept: text/html, application/xhtml+xml"
 ]);
 $response = $curl->execute();
 $responseCode = $curl->getHttpCode();
@@ -35,15 +35,15 @@ To send a POST request, simply replace `Curl::$METHOD_GET` with `Curl::$METHOD_P
 <details>
 <summary><b>POST requests with data</b></summary>
 
-To send POST data to the server, use the `addPostData()` method:
+To send POST data to the server, use the `setPostFields()` method:
 ```php
 $curl = new Curl();
 $curl->setUrl("URL");
 $curl->setMethod(Curl::$METHOD_POST);
-$curl->addHeader([
-    "accept" => "application/json"
+$curl->setHeaders([
+    "Accept: application/json"
 ]);
-$curl->addPostData([
+$curl->setPostFields([
     "key" => "value"
 ]);
 $response = $curl->execute();
@@ -51,4 +51,6 @@ $responseCode = $curl->getHttpCode();
 $curl->close();
 ```
 The above example requests a JSON response from the server with the URL `URL` and sends the POST data `key=value` along with the request.
+
+You can also send JSON-encoded POST data by setting the `asJson` flag of the `setPostFields` method to `true`.
 </details>

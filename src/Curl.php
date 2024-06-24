@@ -66,10 +66,15 @@ class Curl {
     /**
      * Set the Post Fields for the Curl Request
      * @param array $postFields
+     * @param bool $asJson
      * @return $this
      */
-    public function setPostFields(array $postFields): Curl {
-        $this->postFields = http_build_query($postFields);
+    public function setPostFields(array $postFields, bool $asJson = true): Curl {
+        if($asJson) {
+            $this->postFields = json_encode($postFields);
+        } else {
+            $this->postFields = http_build_query($postFields);
+        }
         return $this;
     }
 
