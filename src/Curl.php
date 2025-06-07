@@ -1,6 +1,6 @@
 <?php
 
-namespace jensostertag\Curl;
+namespace struktal\Curl;
 
 class Curl {
     public static string $METHOD_POST = "POST";

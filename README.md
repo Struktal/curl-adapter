@@ -6,7 +6,7 @@ To install this library, include it in your project using composer:
 ```json
 {
     "require": {
-        "jensostertag/curl-adapter": "~1.1.0"
+        "struktal/curl-adapter": "~1.1.0"
     }
 }
 ```

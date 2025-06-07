@@ -1,23 +1,15 @@
 {
-  "name": "jensostertag/curl-adapter",
-  "description": "A Curl Wrapper Library for PHP",
+  "name": "struktal/curl-adapter",
+  "description": "A curl wrapper library for PHP",
   "keywords": [
     "curl",
     "wrapper"
   ],
   "type": "library",
-  "version": "1.1.0",
   "license": "MIT",
-  "authors": [
-    {
-      "name": "Jens Ostertag",
-      "email": "development@jens-ostertag.de",
-      "role": "Developer"
-    }
-  ],
   "autoload": {
     "psr-4": {
-      "jensostertag\\Curl\\": "src/"
+      "struktal\\Curl\\": "src/"
     }
   },
   "require": {
