@@ -1,5 +1,5 @@
 {
-  "name": "struktal/curl-adapter",
+  "name": "struktal/struktal-curl",
   "description": "A curl wrapper library for PHP",
   "keywords": [
     "curl",

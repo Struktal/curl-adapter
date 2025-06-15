@@ -3,12 +3,8 @@ This is a wrapper library for PHP's cURL functions. It allows you to easily send
 
 ## Installation
 To install this library, include it in your project using composer:
-```json
-{
-    "require": {
-        "struktal/curl-adapter": "~1.1.0"
-    }
-}
+```shell
+composer require struktal/struktal-curl
 ```
 
 ## Usage
