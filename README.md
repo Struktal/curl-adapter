@@ -1,4 +1,4 @@
-# Curl-Adapter for PHP
+# Struktal-Curl for PHP
 This is a wrapper library for PHP's cURL functions. It allows you to easily send GET and POST requests
 
 ## Installation
